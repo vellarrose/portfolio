@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Валерия Кудрявцева — Тату Минимализм</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap" rel="stylesheet"> <!-- Подключение шрифта -->
+  <style>
+    :root {
+      --bg: #fafafa;
+      --text: #111;
+      --accent: #b30e0e;
+      --font-family: 'Roboto', sans-serif; /* Используем шрифт Roboto */
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      font-family: var(--font-family);
+      background-color: var(--bg);
+      color: var(--text);
+      line-height: 1.6;
+    }
+
+    header {
+      text-align: center;
+      padding: 4rem 1rem 2rem;
+      border-bottom: 1px solid #e5e5e5;
+    }
+
+    h1 {
+      font-size: 2.5rem;
+      letter-spacing: 1px;
+      font-weight: 500;
+      margin-bottom: 0.5rem;
+    }
+
+    p.subtitle {
+      color: #555;
+      letter-spacing: 0.5px;
+    }
+
+    section.about {
+      max-width: 700px;
+      margin: 3rem auto;
+      padding: 0 1.5rem;
+      text-align: center;
+      color: #333;
+    }
+
+    section.about p {
+      margin-bottom: 0;
+    }
+
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 1.5rem;
+      padding: 3rem 1.5rem;
+      max-width: 1000px;
+      margin: 0 auto;
+    }
+
+    .gallery img {
+      width: 100%;
+      border-radius: 0.5rem;
+      object-fit: cover;
+      background: #eee;
+      filter: grayscale(100%) contrast(1.1);
+      transition: 0.3s;
+    }
+
+    .gallery img:hover {
+      filter: grayscale(0%) contrast(1);
+      transform: scale(1.02);
+    }
+
+    footer {
+      text-align: center;
+      padding: 2.5rem 1rem;
+      border-top: 1px solid #e5e5e5;
+      font-size: 0.95rem;
+    }
+
+    .book {
+      margin-bottom: 1.5rem;
+      font-weight: 500;
+      color: var(--accent);
+      font-size: 1.2rem;
+    }
+
+    .links a {
+      display: inline-block;
+      margin: 0 1rem;
+      color: var(--accent);
+      text-decoration: none;
+      font-weight: 500;
+      position: relative;
+    }
+
+    .links a::after {
+      content: '';
+      display: block;
+      height: 1px;
+      background: var(--accent);
+      width: 0%;
+      transition: width 0.3s;
+    }
+
+    .links a:hover::after {
+      width: 100%;
+    }
+
+    .address {
+      color: #666;
+      margin-top: 1.5rem;
+    }
+
+    .red-dot {
+      display: inline-block;
+      width: 8px;
+      height: 8px;
+      background-color: var(--accent);
+      border-radius: 50%;
+      margin: 0 0.4rem;
+      vertical-align: middle;
+    }
+
+    /* Стиль для логотипа */
+    .logo {
+      font-size: 2.8rem;
+      font-weight: 500;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+      margin-bottom: 0.5rem;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <div class="logo">Валерия Кудрявцева</div> <!-- Логотип -->
+    <p class="subtitle">графика • линия • аниме</p>
+  </header>
+
+  <section class="about">
+    <h2>О себе</h2>
+    <p>Работаю в графике, особеено люблю Японию и аниме.
+Моя задача — сделать тонкий и четкий контур, который не расплывется.</p>
+  </section>
+
+  <section class="gallery">
+    <img src="images/tattoo1.jpg" alt="Работа 1">
+    <img src="images/tattoo2.jpg" alt="Работа 2">
+    <img src="images/tattoo3.jpg" alt="Работа 3">
+    <img src="images/tattoo4.jpg" alt="Работа 4">
+    <img src="images/tattoo5.jpg" alt="Работа 5">
+    <img src="images/tattoo6.jpg" alt="Работа 6">
+  </section>
+
+  <footer>
+    <div class="book">Записаться:</div>
+    <div class="links">
+      <a href="https://t.me/vellarrose" target="_blank">Telegram</a>
+      <a href="https://www.instagram.com/vellar_tat" target="_blank">Instagram</a>
+      <a href="https://vk.com/vellarrosetatt" target="_blank">VK</a>
+    </div>
+    <div class="address">г. Рязань, ул. Чапаева, 59, студия <span style="color:var(--accent)">"Колись Веселись"</span></div>
+    <p style="color:#999; margin-top:1rem;">© 2025 Валерия Кудрявцева</p>
+  </footer>
+
+</body>
+</html>
